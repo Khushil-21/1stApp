@@ -3,45 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CallFragment">
+    tools:context=".fragments.PersonFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvCallFgTitle"
+        android:id="@+id/tvCloudFgTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:text="Add Contact Detail"
+        android:text="Add Person Details"
         android:textSize="15pt"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edtCallFgName"
+        android:id="@+id/edtCloudFgName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
-        android:hint="Contact name"
-
-        />
+        android:hint="Text name" />
 
     <EditText
-        android:id="@+id/edtCallFgNum"
+        android:id="@+id/edtCloudFgEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginTop="160dp"
-        android:layout_marginEnd="20dp"
-        android:hint="Contact number"
 
-        />
+        android:layout_marginEnd="20dp"
+        android:hint="IM Id" />
 
     <Button
-        android:id="@+id/btnCallFgSubmit"
+        android:id="@+id/btnCloudFgSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
