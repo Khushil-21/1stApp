@@ -9,10 +9,10 @@
     tools:context=".ContactActivity">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
         android:id="@+id/frameMasterContact"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="633dp">
+
     </FrameLayout>
 
     <LinearLayout
