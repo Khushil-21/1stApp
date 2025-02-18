@@ -8,18 +8,28 @@
     android:fitsSystemWindows="true"
     tools:context=".ContactActivity">
 
+    <Button
+        android:id="@+id/btnToProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Go to Products"
+        android:layout_centerHorizontal="true"
+        />
+
     <FrameLayout
         android:id="@+id/frameMasterContact"
         android:layout_width="match_parent"
-        android:layout_height="633dp">
+        android:layout_height="620dp">
+
 
     </FrameLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:background="@color/purple_100"
         android:orientation="horizontal"
         tools:ignore="UselessParent">

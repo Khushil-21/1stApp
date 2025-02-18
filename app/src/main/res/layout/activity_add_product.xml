@@ -80,13 +80,23 @@
         android:layout_marginTop="20dp"
         />
 
-
+    <Button
+        android:id="@+id/btnToProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerAddProductCategory"
+        android:layout_toRightOf="@id/btnAddProductSubmit"
+        android:layout_marginTop="50dp"
+        android:text="Go to Contact"
+        android:layout_centerHorizontal="true"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnAddProductSubmit"
         android:layout_below="@+id/spinnerAddProductCategory"
         android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="50dp"
         android:text="Submit"
         />

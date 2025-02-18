@@ -1,5 +1,6 @@
 package com.royal.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,7 @@ public class AddProductActivity extends AppCompatActivity {
     EditText edtQty;
     EditText edtPrice;
     Spinner spinnerCategory;
+    Button btnToContact;
 
 
     @Override
@@ -39,6 +41,7 @@ public class AddProductActivity extends AppCompatActivity {
         edtPrice = findViewById(R.id.edtAddProductPrice);
         edtQty = findViewById(R.id.edtAddProductQty);
         spinnerCategory = findViewById(R.id.spinnerAddProductCategory);
+        btnToContact = findViewById(R.id.btnToProduct);
 
         String categories[] = {"Select Category", "MobilePhone 18%", "Accessories 28%", "HomeAppliances 9%"};
 
@@ -93,6 +96,13 @@ public class AddProductActivity extends AppCompatActivity {
             }
         });
 
+        btnToContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddProductActivity.this, ContactActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

@@ -1,5 +1,7 @@
 package com.royal.firstapp;
 
+import android.content.Intent;
+import android.widget.Button;
 import android.os.Bundle;
 import android.graphics.drawable.Drawable;
 import android.view.View;
@@ -23,11 +25,12 @@ public class ContactActivity extends AppCompatActivity {
     ImageButton imgBtnCall;
     ImageButton imgBtnChat;
     ImageButton imgBtnPerson;
+    Button btnToProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this); // this is the reason of overlapping of the layout on top
+       // EdgeToEdge.enable(this); // this is the reason of overlapping of the layout on top
         setContentView(R.layout.activity_contact);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,6 +40,7 @@ public class ContactActivity extends AppCompatActivity {
 
         imgBtnCall = findViewById(R.id.imgBtnCall);
         imgBtnChat  = findViewById(R.id.imgBtnChat);
+        btnToProduct = findViewById(R.id.btnToProduct);
         imgBtnPerson = findViewById(R.id.imgBtnPerson);
 
         Drawable chatTwoTone = ContextCompat.getDrawable(getApplicationContext(),R.drawable.chat_twotone_32);
@@ -102,6 +106,14 @@ public class ContactActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
             }
         });
+        btnToProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AddProductActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
